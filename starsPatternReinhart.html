@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    // Solve it #21
+    var bintangDiamond = '';
+    for (var i = 1 ; i <= 5 ; i ++) {
+        for ( var j = i; j <= 5 ; j++ ) {
+            bintangDiamond = bintangDiamond + ' k ';
+        }
+
+        for ( var k = 1 ; k <= i  ; k++) {
+            bintangDiamond = bintangDiamond + ' * '
+        }
+
+        for ( var l = 2 ; l <= i  ; l++) {
+            bintangDiamond = bintangDiamond + ' * '
+        }
+
+        bintangDiamond = bintangDiamond + '\n'
+    }
+
+    for ( var i = 2 ; i <= 5 ; i++) {
+        for ( j = 1 ; j <= i  ; j++) {
+            bintangDiamond = bintangDiamond + ' k ';
+        }
+
+        for (var k = i ; k <= 5 ; k++ ) {
+            bintangDiamond = bintangDiamond + ' * '
+        }
+
+        for (var l = i+1  ; l <= 5 ; l++ ) {
+            bintangDiamond = bintangDiamond + ' * '
+        }
+        bintangDiamond = bintangDiamond + '\n'      
+    }
+    console.log(bintangDiamond);
+
+    // Solve it 20
+    var bintangPiramidKebalik = '';
+    for ( var i = 1 ; i <= 10; i++ ) {
+        for ( var j = 2  ; j <= i  ; j++) {
+            bintangPiramidKebalik = bintangPiramidKebalik + ' k '            
+        }
+
+        for ( var k = i  ; k <= 10  ; k++ ) {
+            bintangPiramidKebalik = bintangPiramidKebalik + ' * '         
+        }
+
+        for ( var l = i  ; l <= 9  ; l++ ) {
+            bintangPiramidKebalik = bintangPiramidKebalik + ' * '
+        }
+
+        bintangPiramidKebalik = bintangPiramidKebalik + '\n' 
+
+
+    }
+    console.log(bintangPiramidKebalik);
+
+
+    // Solve it 19
+    var bintangPiramid = '';
+    for ( var i = 1 ; i <= 10; i ++ ) {
+        for ( var j = i ; j <= 9  ; j++) {
+            bintangPiramid = bintangPiramid + ' k '
+        }
+
+        for ( var k = 1 ; k <= i ; k++) {
+            bintangPiramid = bintangPiramid + ' * '
+        } 
+
+        for ( var j = 2 ; j <= i  ; j++ ) {
+            bintangPiramid = bintangPiramid + ' * '
+        }
+
+        bintangPiramid = bintangPiramid + '\n'
+
+    }
+
+    console.log(bintangPiramid);
+
+    // Solve 18
+    var bintangDuaSegitiga = '';
+    for ( var i = 1 ; i <= 5; i++) {
+        for ( var j = i  ; j <=5 ; j++) {
+            bintangDuaSegitiga = bintangDuaSegitiga + ' * '
+        }
+
+        bintangDuaSegitiga = bintangDuaSegitiga + '\n';
+    } 
+
+    for ( var i = 2 ; i <= 5; i++) {
+        for ( var j = 1 ; j <= i ; j++) {
+            bintangDuaSegitiga = bintangDuaSegitiga + ' * '
+        }
+
+        bintangDuaSegitiga = bintangDuaSegitiga + '\n';
+    } 
+    console.log(bintangDuaSegitiga);
+
+
+
+
+
+    
+
+    
+</script>
+</html>
